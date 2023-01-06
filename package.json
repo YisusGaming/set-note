@@ -5,9 +5,17 @@
     "description": "Need some to-do notes on your screen? This is for you!",
     "main": "build/index.js",
     "scripts": {
-        "start": "node build/index.js",
-        "build": "tsc"
+        "start": "cp -r ./src/public ./build && electron build/index.js",
+        "start:dev": "nodemon build/index.js",
+        "build": "tsc",
+        "build:dev": "tsc -w"
     },
     "author": "YisusGaming",
-    "license": "CC-BY-NC-ND-4.0"
+    "license": "CC-BY-NC-ND-4.0",
+    "dependencies": {
+        "electron": "^22.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
 }
