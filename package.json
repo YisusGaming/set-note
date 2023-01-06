@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "name": "set-note",
+    "version": "1.0.0",
+    "description": "Need some to-do notes on your screen? This is for you!",
+    "main": "build/index.js",
+    "scripts": {
+        "start": "node build/index.js",
+        "build": "tsc"
+    },
+    "author": "YisusGaming",
+    "license": "CC-BY-NC-ND-4.0"
+}
